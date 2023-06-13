@@ -1,6 +1,7 @@
 var btn = document.querySelector('#sub-btn');
 
-btn.addEventListener('click',function(){
+btn.addEventListener('click',function()
+{
     var input1 = document.querySelector('#inpt1').value;
     var input2 = document.querySelector('#inpt2').value;
     if(!input1.length>0 || !input2.length>0 )
