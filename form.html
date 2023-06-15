@@ -2,35 +2,40 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Saver</title>
 </head>
 
 <body>
-    <h1>Welcome to data saver!!</h1>
-    <h3>This can save your general information</h3>
+    <h1 class="Text">Welcome to data saver!!</h1>
+    
+    <div class="unique">
+    <h3 class="Text" id="info">This can save your general information</h3>
+    </div>
     <form action="/datasaved.html">
+        <div class="center">
         <label for="name"><i>First name: </i></label><br>
         <input type="text" id="name"><br><br>
         <label for="lastname"><i>Last name: </i></label><br>
         <input type="text" id="lastname"><br><br>
-        <label for="age"><i>Enter your age: </i></label><br>
+        <label  for="age"><i>Enter your age: </i></label><br>
         <input type="number" id="age"><br><br>
 
         <label for="gender">Select your gender:</label><br>
-        <label for="genderida">
+        <label for="genderida"class="change">
             <input type="radio" name="gender" id="genderida">Male
         </label>
-        <label for="genderidb">
-            <input type="radio" name="gender" id="genderidb">Female
+        <label for="genderidb"class="change">
+            <input  type="radio" name="gender" id="genderidb">Female
         </label>
-        <label for="genderidc">
+        <label for="genderidc" class="change">
             <input type="radio" name="gender" id="genderidc">Others
         </label>
         <br><br>
-        <button type="submit">Submit</button>
-    </form>
+        <button class="btn" type="submit">Submit</button>
+    </div>
+    </form> 
 </body>
-
 </html>

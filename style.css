@@ -1,0 +1,60 @@
+body{
+    background-color:lightblue;
+}
+.Text{
+    color:darkblue;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+#info
+{
+    border-radius: 10px;
+    border: 1px solid;
+    display: inline;
+    padding:  3px 10px 3px 10px; /* Top Right Bottom Left */
+    
+}
+.unique
+{
+    text-align: center;
+    margin-bottom:10px ;
+}
+button:hover{
+        
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}  
+.change:hover
+{
+    color:blueviolet;
+}
+button
+{
+    background-color:limegreen;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(44, 44, 44);
+}
+li
+{
+    float: left;
+}
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover
+{
+    background-color: black;
+}
