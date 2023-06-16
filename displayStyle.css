@@ -1,0 +1,28 @@
+body
+{
+    background-color: lightseagreen;
+}
+
+.heading
+{
+    display:inline;
+    width: 200px;
+    height: 200px;
+}
+.Container
+{
+    border: 2px solid gray;
+    height: 45vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Item
+{
+    background-color: blue;
+    border: 2px solid black;
+    margin: 15px;
+    width: 122px;
+    height: 122px;
+}
