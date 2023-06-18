@@ -1,0 +1,52 @@
+.box {
+    background-color: blueviolet;
+    color: black;
+    text-align: center;
+    font-size: 72px;
+    display: flex;
+    display: none;
+}
+
+@media (max-width:300px) {
+    #box1 
+    {
+        display: block;
+        background-color: aquamarine;
+    }
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    #box2 
+    {
+        display: block;
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (min-width:500px) and (max-width:800px) {
+    #box3 
+    {
+        display: block;
+        background-color: burlywood;
+        color: black;
+    }
+}
+
+@media (min-width:800px) and (max-width:1000px) {
+    #box4 
+    {
+        display: block;
+        background-color: lightskyblue;
+        color: black;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1200px) {
+    #box5
+    {
+        display: block;
+        background-color: yellow;
+        color: black;
+    }
+}
