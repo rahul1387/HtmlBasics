@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. */
+  position: relative;
+  animation-name: rahul1;
+  animation-duration: 4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-iteration-count: 1;
+}
+.box2{
+    border-radius:10px;
+    width: 100px;
+    height: 60px;
+    background-color:#54B435;
+    color:white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: rahul2;
+    animation-duration:1s;
+    animation-iteration-count: 1s;
+}
+@keyframes rahul1 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes rahul2 {
+    
+    25%  {background-color:white; right:0px; ;left:100px; color: white;}
+    50%  {background-color:white; right:200px; left:0px;} 
+    
+}
+</style>
+<body>
+    <h1>Keyframes and Animation in css.</h1>
+    <div class="container">
+            <div class="box1">
+                This is my animation box
+            </div>
+            <br>
+            <br>
+            <div class="box2">
+                Hey Rahul
+            </div>
+    </div>
+</body>
+</html>
