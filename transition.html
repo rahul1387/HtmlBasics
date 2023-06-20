@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .box {
+            background-color: green;
+            height: 100px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3%;
+            /* transition-property: background-color;
+            transition-duration:1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+
+            /* Transition short hand property in one line  */
+            transition: all 1s ease-in-out;
+
+        }
+
+        .box:hover {
+            background-color: lightskyblue;
+            cursor: pointer;
+            height: 150px;
+            width: 250px;
+            font-size: 200%;
+        }
+
+        .div1 {
+            transition-timing-function: linear;
+        }
+
+        .div2 {
+            transition-timing-function: ease;
+        }
+
+        .div3 {
+            transition-timing-function: ease-in;
+        }
+
+        .div4 {
+            transition-timing-function: ease-out;
+        }
+
+        .div5 {
+            transition-timing-function: ease-in-out;
+        }
+        .hover
+        {
+            background-color: blue;
+            transition: all 2s;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+            border-radius: 3%;
+        }
+        .hover:hover{
+            width: 500px;
+            color: white;
+            font-size: 300%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><i>This is transition in css</i></h1>
+    <div class="main-div">
+        <div class="box">
+            This is my box
+        </div>
+        <br>
+        <br>
+        <div class="div1 hover">linear</div><br>
+        <div class="div2 hover">ease</div><br>
+        <div class="div3 hover">ease-in</div><br>
+        <div class="div4 hover">ease-out</div><br>
+        <div class="div5 hover">ease-in-out</div><br>
+    </div>
+</body>
+
+</html>
