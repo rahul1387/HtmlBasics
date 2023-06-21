@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    height: 100vh;
+    background-color: #212A3E;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 65px 1fr 196px;
+    /* row-gap: 15px;
+    column-gap: 15px; */
+}
+.items
+{
+    /* height: 100px;
+    width: 100px; */
+    background-color: #176B87;
+}
+.item1
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #1f1f1f;
+}
+.item2
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item3
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+} 
+.navbar
+{
+    list-style-type: none;
+} 
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 45px;
+    text-decoration: none;
+} 
+li{
+    float: left;    
+} 
+li a:hover
+{
+    background-color: black;
+}
+.Sign,.Login
+{
+    float: right;
+}
