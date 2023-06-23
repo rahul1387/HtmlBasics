@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visibility and z-index</title>
     <style>
-        *
-        {
+        * {
             margin: 0;
             padding: 0;
         }
-        .flex-div
-        {
+
+        .flex-div {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
-        .box
-        {
+
+        .box {
             width: 170px;
             height: 330px;
             border: 2px solid black;
             border-radius: 2px;
         }
-        #box1
-        {
+
+        #box1 {
             transform: rotate(-35deg);
             background-color: green;
             position: relative;
             left: 138px;
             z-index: 10;
         }
-        #box2
-        {
+
+        #box2 {
             transform: rotate(-35deg);
-            z-index:6;
+            z-index: 6;
             /* display:none; -->will hide the element and the space */
             /* visibility: hidden; --->will hide the element but will show its empty space. */
             /* z-index: will only work on position relative, absolute, sticky, fixed ; */
             background-color: red;
-            position:relative;
+            position: relative;
             left: 84px;
-            
+
 
         }
-        #box3
-        {
+
+        #box3 {
             transform: rotate(-35deg);
-            z-index:5;
+            z-index: 5;
             position: relative;
             left: 48px;
             background-color: yellow;
         }
-        #box4
-        {
+
+        #box4 {
             transform: rotate(-35deg);
-            z-index:1;
+            z-index: 1;
             position: relative;
             left: 14px;
             background-color: blue;
-        }#box5
-        {
+        }
+
+        #box5 {
             transform: rotate(35deg);
-            z-index:1;
+            z-index: 1;
             position: relative;
             left: 14px;
             background-color: orange;
         }
-        #box6
-        {
+
+        #box6 {
             transform: rotate(35deg);
 
-            z-index:1;
+            z-index: 1;
             position: relative;
             left: 14px;
-            background-color:aqua;
+            background-color: aqua;
         }
-        #box7
-        {
+
+        #box7 {
             transform: rotate(35deg);
 
-            z-index:1;
+            z-index: 1;
             position: relative;
             left: 14px;
             background-color: rgb(30, 255, 0);
         }
-        #box8
-        {
-            z-index:1;
+
+        #box8 {
+            z-index: 1;
             transform: rotate(35deg);
 
             position: relative;
             left: 14px;
-            background-color:brown;
+            background-color: brown;
         }
-        
     </style>
 </head>
+
 <body>
 
     <div class="flex-div">
@@ -111,4 +112,5 @@
         <div class="box" id="box8">Card 8 </div>
     </div>
 </body>
+
 </html>
