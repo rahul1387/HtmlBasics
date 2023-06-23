@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folding of div like a textdoc</title>
+    <style>
+        body
+        {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card
+        {
+            width: 350px;
+            height: 500px;
+            background-color: white;
+        }
+        .top-left
+        {
+            position: absolute;
+            border-top: 40px solid blue;
+            border-right: 40px solid red;
+            border-bottom: 40px solid green;
+            border-left: 40px solid orange;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="top-left"></div>
+    </div>
+</body>
+</html>
