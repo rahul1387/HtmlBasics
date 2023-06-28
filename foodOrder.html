@@ -6,105 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery</title>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            color: white;
-            background-color: black;
-        }
-
-        .navigation {
-            display: flex;
-            font-size: 20px;
-        }
-        li {
-            font-family: 'Bree Serif', serif;
-            list-style: none;
-            padding: 34px 23px;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        a:hover {
-            color: #009688;
-        }
-
-        h1 {
-            font-family: 'Bree Serif', serif;
-            font-size: 50px;
-        }
-
-        p {
-            font-family: 'Bree Serif', serif;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .Welcome {
-            height: 350px;
-            margin: 3px 230px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-        }
-
-        header::before {
-            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover ;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.3;
-        }
-
-        .Section2 {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            height: 350px;
-            flex-direction: column;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .selectTag {
-            font-size: 16px;
-            width: 500px;
-            height: 40px;
-            border-radius: 5px;
-            background-color: transparent;
-            color: white;
-            font-family:'Bree Serif', serif ;
-        }
-        option{
-            background-color: #009688;
-            color: white;
-        }
-        .section3
-        {
-            background-image: url('');
-            padding-top: 50px;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            height: 350px;
-            flex-direction: column;
-        }
-    </style>
+    <link rel="stylesheet" href="foodOrder.css">
 </head>
 
 <body>
@@ -147,11 +49,10 @@
     <section class="section3">
         <h1>Please Enter All The Details Here</h1><br>
         <div class="address">
-            
-            <form action="">
-                <input type="text" placeholder="Enter your name"><br><br class="">
-                <input type="text" placeholder="Enter your phone-no"><br><br>
-                <input type="text" ><br><br>
+            <form action="" class="form">
+                <input type="text" placeholder="Enter your name"class="name"><br><br >
+                <input type="text" placeholder="Enter your phone-no" class="phone-no"><br><br>
+                <input type="text" placeholder="Enter your address" class="area"><br><br>
             </form>
         </div>
     </section>
