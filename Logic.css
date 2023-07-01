@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-div{
+    background: url('https://logiclabsoftware.com/img/background2.png') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    opacity: 1;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.header-content{
+    text-align: center;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    border-radius: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 13px 13px 13px 13px;
+    transition: all 0.35s;
+    margin-top: 50px;
+}
+.list{
+    float: right;
+}
+.btn:hover{
+    color:#F05F40 ;
+    background-color: white;
+}
+.header-content-inner p{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    opacity: 0.70;
+}
+#homeHeading{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size:50px ;
+}
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+hr {
+    border-color: #A6A6A6;
+    border-width: 3px;
+    max-width: 50px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+    
+.order-food
+{
+    width: 500px;
+    height: 500px;
+}
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+.OurSer{
+    font-size: 30px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.ser{
+    margin-top: 100px;
+    text-align: center;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+}
