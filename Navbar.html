@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-div {
+            background-color: lightblue;
+            height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .navbar {
+            display: flex;
+            height: 69px;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+            position: relative;
+        }
+
+        .logout {
+            float: right;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background-color: darkblue;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        ul {
+            width: 100%;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: lightblue;
+            justify-content:center;
+            /* flex-direction:row-reverse; */
+            align-items: center;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            font-size: 30px;
+            height: 600px;
+            width: 600px;
+            background-color: brown;
+        }
+        .flex-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .flex-box>div{
+            background-color: chartreuse;
+            
+        }
+        .flex{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        span{
+            height: 30px;
+            width: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="navbar">
+            <ul>
+                <li class="list"><a href="#home">HOME</a></li>
+                <li class="list"><a href="#service">SERVICE</a></li>
+                <li class="list"><a href="#aboutus">ABOUT US</a></li>
+                <li class="list"><a href="#contactus">CONTACT US</a></li>
+                <div class="logout">
+                    <li class="list "><a href="#logout">Logout</a></li>
+                </div>
+
+            </ul>
+        </div>
+        <div class="flex-container">
+            <div class="flex-box">
+                <div class="flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+</html>
