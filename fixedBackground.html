@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Background</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .main-div
+        {
+            height: 10000px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            color: aqua;
+        }
+        .content{
+            background: url("bedroom-3778695_1280.jpg");
+            background-attachment: fixed;
+            margin-top: 90em;
+            height: 700px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .btn
+        {
+            cursor: pointer;
+            margin-top: 90px;
+            border: 2px solid white;
+            background:transparent;
+            color: white;
+            height: 50px;
+            width: 140px;
+            border-radius: 40px;
+            font-size:15px ;
+            transition: all 0.5s;
+            font-weight: 500;
+        }
+        .btn:hover
+        {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="content">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe architecto rem sint non numquam dolor <br> ducimus pariatur , illo unde. Aliquid consectetur, nesciunt veniam <br> enim quo hic! Omnis, cum labore! Magnam!</h1>
+            <button type="button" class="btn">Contact Us</button>
+        </div>
+    </div>
+</body>
+</html>
