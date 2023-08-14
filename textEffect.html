@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effect</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body
+        {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #010718;
+            overflow: hidden;
+        }
+        .container{
+            width: 246px;
+            overflow: hidden;
+        }
+        .container .text
+        {
+            position: relative;
+            color: #4070F4;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .container .text .first-text
+        {
+            color: #fff;
+
+        }
+        .sec-text::before
+        {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #010718;
+            border-left: 2px solid #4070F4;
+            animation: animate 4s steps(12) infinite;
+        }
+        @keyframes animate{
+            40%,60%
+            {
+                left:calc(100% + 4px);
+            }
+            100%
+            {
+                left: 0%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <span class="text first-text">I'm a </span>
+        <span class="text sec-text" >Freelancer</span>
+    </div>
+
+    <script>
+        const text = document.querySelector(".sec-text")
+
+        const textload = function(){
+            setTimeout(function(){
+                text.textContent="Freelancer";
+            },0)
+            setTimeout(function(){
+                text.textContent="Coding";
+            },4000)
+            setTimeout(function(){
+                text.textContent="Youtuber";
+            },8000)
+        }
+        textload();
+        setInterval(textload, 12000)
+    </script>
+
+</body>
+</html>
