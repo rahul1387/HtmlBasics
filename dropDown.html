@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        height: 3em;
+        background-color: rgb(255, 81, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar li {
+        list-style: none;
+        cursor: pointer;
+    }
+    a{
+        padding:;
+    }
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+        margin: 1em;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar ul {
+        display: inline-flex;
+    }
+    .drop_1
+    {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar ul li:hover .drop_1
+    {
+        display: block;
+        position: absolute;
+        background-color: rgb(0, 100, 0);
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+    .navbar ul li:hover .drop_1 ul
+    {
+        display: block;
+        margin: 1em;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a>
+                <div class="drop_1">
+                    <ul>
+                        <li><a href="#">Aaj Tak</a></li>
+                        <li><a href="#">Aaj Tak</a></li>
+                        <li><a href="#">Aaj Tak</a></li>
+                        <li><a href="#">Aaj Tak</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
