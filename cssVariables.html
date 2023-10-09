@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties.</title>
+</head>
+<style>
+    :root
+    {   
+        --box-color:skyblue;
+        --bg-color:rgb(0, 69, 148);
+    }
+    .box
+    {
+        width: 200px;
+        height: 200px;
+        background-color:var(--box-color);
+        border: 2px solid black;
+        margin: 1em;
+    }
+    .container
+    {
+        display: flex;
+        background-color: var(--bg-color);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
